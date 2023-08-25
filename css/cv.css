@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    direction: ltr;
+  }
+  
+  td, th {
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-left-width:0 ;
+    text-align: left;
+    padding: 8px;
+  }
+  .header-bg{
+    background-color: rgba(217, 217, 217, 1);
+    padding-inline: 6%;
+    color: black;
+    padding-block: 2%;
+    border-radius: 29px;
+    /* font-weight: 600; */
+    margin-bottom: 15px;
+  }
+  .header-bg p{
+    font-weight: 700;
+  }
+  .header-bg h6{
+    font-weight: 700;
+  }
+  .header-bg span a{
+    font-weight: 700;
+    color: black;
+  }
