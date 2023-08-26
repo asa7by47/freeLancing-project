@@ -26,17 +26,17 @@ body {
   width: 60%;
 }
 .nav-container-bg {
-  background-color: rgba(162, 54, 7, 0.7);
+  /* background-color: rgba(162, 54, 7, 0.7); */
 }
 .navbar ul li a {
   color: white !important;
 }
 .bg-home {
-  background-color: rgba(255, 182, 141, 0.42);
+  /* background-color: rgba(255, 182, 141, 0.42); */
 }
 .custom-border {
   border-radius: 15px;
-  border: 1px solid rgba(162, 54, 7, 0.7);
+  border: 1px solid ;
   transition: 0.3s all ease-in-out;
 }
 .custom-border:hover{
@@ -63,7 +63,7 @@ background-color: rgba(217, 217, 217, 1);
     color: rgba(0, 0, 0, 1);
 }
 .new-subjects{
-   background: rgba(162, 54, 7, 0.42);
+   /* background: rgba(162, 54, 7, 0.42); */
     width: 100%;
     border-radius: 10px;
     margin-top: 3px;
