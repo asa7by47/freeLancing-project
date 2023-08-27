@@ -32,15 +32,11 @@ body {
   border-radius: 15px;
   width: 60%;
 }
-.nav-container-bg {
-  /* background-color: rgba(162, 54, 7, 0.7); */
-}
+
 .navbar ul li a {
   color: white !important;
 }
-.bg-home {
-  /* background-color: rgba(255, 182, 141, 0.42); */
-}
+
 .custom-border {
   border-radius: 15px;
   border: 1px solid;
@@ -61,7 +57,7 @@ body {
   margin-top: 10px;
 }
 .text-container p:nth-child(3) {
-  width: 550px;
+  width: 38vw;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -122,8 +118,7 @@ body {
   border: 1px solid rgba(162, 54, 7, 0.7);
   transition: 0.3s all ease-in-out;
 }
-.break-line {
-}
+
 .break-line::after {
   content: attr(data-content);
 }
