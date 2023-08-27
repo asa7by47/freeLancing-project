@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +18,14 @@ p {
 html,
 body {
   direction: rtl;
-  font-family: Inter;
-  font-weight: 500;
+  /* font-family: "Times New Roman", Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace; */
+  font-family: "Cairo";
+  font-family: "Baloo Bhaijaan 2", cursive;
+  /* font-weight: 500; */
 }
+
 .nav-bg {
   background-color: #9c4c1fb5;
   padding-inline: 81px;
@@ -36,52 +43,62 @@ body {
 }
 .custom-border {
   border-radius: 15px;
-  border: 1px solid ;
+  border: 1px solid;
   transition: 0.3s all ease-in-out;
 }
-.custom-border:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+.custom-border:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+}
+.text-container p {
+  color: rgba(0, 0, 0, 1);
+}
+.text-container p:nth-child(1) {
+  font-size: 20px;
+}
+.text-container p:nth-child(2) {
+  font-size: 12px;
+  margin-top: 10px;
+}
+.text-container p:nth-child(3) {
+  width: 550px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.custom-border:hover .text-container p:nth-child(3) {
+  overflow: visible;
+  white-space: normal;
+}
+.newText-Container {
+  background-color: rgba(217, 217, 217, 1);
+}
+.newText-Container p {
+  color: rgba(0, 0, 0, 1);
+}
+.new-subjects {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 3px;
+}
+.new-subjects a {
+  text-decoration: underline !important;
+}
+.active > .page-link,
+.page-link.active {
+  background-color: rgba(162, 54, 7, 0.7) !important;
+  border: unset;
+  border-radius: 50%;
+}
+.page-item a {
+  background-color: rgba(255, 101, 15, 0.91) !important;
+  color: white;
+}
+.program-container {
+  width: 90% !important;
+}
 
-}
-.text-container p{
-    color: rgba(0, 0, 0, 1);
-}
-.text-container p:nth-child(1){
-    font-size: 20px;
-}
-.text-container p:nth-child(2){
-    font-size: 12px;
-    margin-top: 10px;
-
-}
-.newText-Container{
-background-color: rgba(217, 217, 217, 1);
-
-}
-.newText-Container p{
-    color: rgba(0, 0, 0, 1);
-}
-.new-subjects{
-   /* background: rgba(162, 54, 7, 0.42); */
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 3px;
-}
-.active>.page-link, .page-link.active{
-    background-color: rgba(162, 54, 7, 0.7) !important;
-    border: unset;
-    border-radius: 50%;
-}
-.page-item a{
-    background-color: rgba(255, 101, 15, 0.91) !important;
-    color: white;
-}
-.program-container{
-    width: 90% !important;
-}
-
-.download-btn{
+.download-btn {
   padding-block: 10px;
   width: 50%;
   border-radius: 32px;
@@ -89,21 +106,40 @@ background-color: rgba(217, 217, 217, 1);
   color: white;
   border: none;
 }
-@media screen and (max-width:767px) {
-  .call-container p{
+@media screen and (max-width: 767px) {
+  .call-container p {
     font-size: 12px;
   }
 }
-.call-container:hover{
+.call-container:hover {
   transform: scale(1.1);
   box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-
 }
-.call-container{
+.call-container {
   margin: auto;
   padding: 30px;
   border-radius: 15px;
   border: 1px solid rgba(162, 54, 7, 0.7);
   transition: 0.3s all ease-in-out;
+}
+.break-line {
+}
+.break-line::after {
+  content: attr(data-content);
+}
 
+.break-line[data-content="."]::after {
+  content: ".\A";
+  white-space: pre;
+}
+
+.break-line[data-content="?"]::after {
+  content: "?\A";
+  white-space: pre;
+}
+
+
+
+.height{
+  height: 175px;
 }
