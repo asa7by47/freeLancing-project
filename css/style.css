@@ -132,9 +132,40 @@ body {
   content: "?\A";
   white-space: pre;
 }
-
-
-
 .height{
   height: 175px;
+}
+
+
+.nav-container-bg{
+  background-color: #537188;
+}
+.color-box{
+  position: fixed;
+  top: 50%;
+  width: 200px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+.color{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color:nth-child(1){
+  background-color: #537188;
+}
+.color:nth-child(2){
+  background-color: #CBB279;
+}
+.color:nth-child(3){
+  background-color: #E1D4BB;
+}
+.color:nth-child(4){
+  background-color: #B59282;
 }
