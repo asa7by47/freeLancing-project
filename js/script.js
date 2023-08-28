@@ -7,6 +7,62 @@ const colors = document.querySelectorAll(".color");
 function getRandomImage(array) {
   return Math.floor(Math.random() * array.length);
 }
+window.addEventListener("load",function(){
+  var randomImages = getRandomImage(images);
+  var currentPath = window.location.pathname;
+  var image = document.querySelectorAll(".main-image");
+
+  image.forEach(function (ele) {
+    if (
+      currentPath.includes("home") ||
+      currentPath.includes("subjects") ||
+      currentPath.includes("cv") ||
+      currentPath.includes("contact") ||
+      currentPath.includes("books") ||
+      currentPath.includes("articles")
+    ) {
+      ele.src = "../" + images[randomImages];
+    } else {
+      ele.src = images[randomImages];
+    }
+  });
+
+  image.forEach((page) => {
+    if (
+      currentPath.includes("one") ||
+      currentPath.includes("two") ||
+      currentPath.includes("three") ||
+      currentPath.includes("four") ||
+      currentPath.includes("five") ||
+      currentPath.includes("six") ||
+      currentPath.includes("seven") ||
+      currentPath.includes("eight") ||
+      currentPath.includes("1") ||
+      currentPath.includes("2") ||
+      currentPath.includes("3") ||
+      currentPath.includes("4") ||
+      currentPath.includes("5") ||
+      currentPath.includes("6") ||
+      currentPath.includes("7") ||
+      currentPath.includes("8") ||
+      currentPath.includes("9") ||
+      currentPath.includes("10") ||
+      currentPath.includes("11") ||
+      currentPath.includes("12") ||
+      currentPath.includes("13") ||
+      currentPath.includes("14") ||
+      currentPath.includes("15") ||
+      currentPath.includes("16") ||
+      currentPath.includes("17") ||
+      currentPath.includes("18") ||
+      currentPath.includes("19") ||
+      currentPath.includes("20") ||
+      currentPath.includes("21")
+    ) {
+      page.src = "../../" + images[randomImages];
+    }
+  });
+})
 
 // Function to toggle the color box visibility
 function toggleColorBox() {
@@ -68,3 +124,9 @@ paragraphs.forEach((p) => {
   p.innerHTML = text; // Set the inner HTML of the paragraph to the modified text
   p.style.textAlign = "justify"; //
 });
+
+// New js up 
+
+
+
+
