@@ -25,6 +25,8 @@ var bodyBG = document.querySelectorAll(".bg-home");
 const colorToggle = document.querySelector("#colorToggle");
 const colorBox = document.querySelectorAll(".color-box");
 const colors = document.querySelectorAll(".color");
+var nav = document.querySelectorAll(".nav-container-bg");
+
 // Images
 function getRandomImage(array) {
   return Math.floor(Math.random() * array.length);
@@ -113,6 +115,9 @@ colors.forEach((color) => {
     bodyBG.forEach((body) => {
       body.style.backgroundColor = selectedColor;
     });
+    nav.forEach((body) => {
+      body.style.backgroundColor = selectedColor;
+    });
 
     // Save the selected color in sessionStorage
     sessionStorage.setItem("selectedColor", selectedColor);
@@ -126,8 +131,15 @@ if (savedColor) {
   bodyBG.forEach((body) => {
     body.style.backgroundColor = savedColor;
   });
+
+  nav.forEach((body) => {
+    body.style.backgroundColor = savedColor;
+  });
 } else {
   bodyBG.forEach((body) => {
+    body.style.backgroundColor = "#CBB279";
+  });
+  nav.forEach((body) => {
     body.style.backgroundColor = "#CBB279";
   });
 
